@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ジェークエリー</title>
+    <title>JQuery</title>
 </head>
 <body>
-    <div id="text">aaaaaa</div>
-   <script src="jquery.min.js"></script> 
+    <div id="text">hello</div>
+    <script src="jquery.min.js"></script> 
    <script>
    $('#text').html('jQuery');
+   $('div').html('color').css('background-color','yellow');
+   $('#button').on('click',function(){
+       $('.list').fadeOut(3000,function(){
+           alert('finish!');
+       });
+   })
+   $('hd').hide();
+   $('.list menu').on('click',function(){
+      $(this).next().slideToggle();
+       })
+      $(this).addClass('active');
+       })  
 </script>
 </body>
 </html>
